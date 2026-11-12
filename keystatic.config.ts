@@ -1,7 +1,9 @@
 import { config, fields, singleton, collection } from '@keystatic/core';
 
+// Modo del panel: Keystatic Cloud si hay proyecto (lo usa la publicación en Cloudflare), GitHub si hay repositorio, si no, local.
+const cloudProject = import.meta.env.PUBLIC_KEYSTATIC_CLOUD_PROJECT?.trim();
 const repository = import.meta.env.PUBLIC_KEYSTATIC_GITHUB_REPO?.trim();
-const githubMode = !!repository;
+const githubMode = !cloudProject && !!repository;
 if (repository && !/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repository)) throw new Error('El repositorio de GitHub debe tener el formato cuenta/repositorio.');
 const [owner, name] = (repository || '').split('/');
 
@@ -62,7 +64,8 @@ const base = {
 };
 export default config({
   locale: 'es-ES',
-  storage: githubMode ? { kind: 'github', repo: { owner, name } } : { kind: 'local' },
+  storage: cloudProject ? { kind: 'cloud' } : githubMode ? { kind: 'github', repo: { owner, name } } : { kind: 'local' },
+  ...(cloudProject ? { cloud: { project: cloudProject } } : {}),
   ui: { brand: { name: 'GAPS · Administración' }, navigation: { 'Contenido institucional': ['siteEs', 'siteEn', 'settings', 'formEs', 'formEn'], 'Casos y conocimiento': ['cases', 'publications', 'news'] } },
   singletons: {
     siteEs: singleton({ label: 'Web · Español', path: 'src/data/es', format: { data: 'json' }, schema: siteSchema }),
