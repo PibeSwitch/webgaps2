@@ -5,10 +5,11 @@ import keystatic from '@keystatic/astro';
 import cloudflare from '@astrojs/cloudflare';
 import { loadEnv } from 'vite';
 import { deploymentSettings } from './scripts/deploy-settings.mjs';
+import { withDefaults } from './scripts/deploy-defaults.mjs';
 import { fileURLToPath } from 'node:url';
 
 const remote = process.env.GAPS_DEPLOY_TARGET === 'cloudflare';
-if (remote) deploymentSettings({ ...loadEnv('production', process.cwd(), 'PUBLIC_'), ...process.env });
+if (remote) deploymentSettings(withDefaults({ ...loadEnv('production', process.cwd(), 'PUBLIC_'), ...process.env }));
 
 // The local filesystem API is available only in the loopback development server.
 const localEditor = () => {
