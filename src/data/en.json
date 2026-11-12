@@ -1,0 +1,381 @@
+{
+  "lang": "en",
+  "nav": [
+    "Sectors",
+    "Specialties",
+    "About us",
+    "Contact"
+  ],
+  "title": "GAPS Consulting and Development | People, projects and development",
+  "description": "We help companies and institutions design, structure and manage projects that create economic, regional and social value.",
+  "hero": {
+    "eyebrow": "GAPS · Consulting and development",
+    "title": "People, projects and development.",
+    "intro": "We help companies and institutions design, structure and manage projects that create economic, regional and social value.",
+    "cta": "Tell us about your project",
+    "secondary": "Explore sectors",
+    "traits": [
+      "Strategic perspective",
+      "Cross-sector experience",
+      "Public-private coordination",
+      "Deep local knowledge",
+      "Delivery capability"
+    ],
+    "image": null,
+    "imageAlt": ""
+  },
+  "pillars": [
+    {
+      "title": "Territory",
+      "body": "Projects across several provinces, from the Northwest to Buenos Aires"
+    },
+    {
+      "title": "Partnerships",
+      "body": "Working with engineering firms, operators and financial institutions"
+    },
+    {
+      "title": "Results",
+      "body": "From strategy to concrete, deliverable projects"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Sector knowledge and a systems view.",
+      "lead": "To drive investment and development. Each sector brings together services that run from early-stage studies to project management.",
+      "link": "All services by sector"
+    },
+    {
+      "title": "Cross-cutting capabilities.",
+      "lead": "To structure, position and manage complex projects. Our specialties are combined to fit each project, in any of the three sectors.",
+      "link": "All specialties"
+    }
+  ],
+  "sectors": {
+    "title": "Sector knowledge and a systems view.",
+    "lead": "Our practice is organized around sectors where experience, networks and delivery capability come together. In each one, our services run from early-stage studies through to project management.",
+    "items": [
+      {
+        "id": "productivo",
+        "title": "Industrial and Corporate",
+        "label": "01 / Sector",
+        "description": "Services for industrial, commercial and service companies in their growth, performance improvement and investment processes. Capabilities in commercial strategy, economic management, organization, engineering and project delivery, integrated according to the needs of the business.",
+        "cta": "Ask about this sector",
+        "services": [
+          {
+            "id": "diagnostico-e-ingenieria-de-procesos-e-instalaciones",
+            "title": "Process and facility assessment and engineering",
+            "paragraphs": [
+              "Assessment of production, logistics and corporate operations and assets to improve capacity, productivity and reliability. Redesign of workflows, modernization, expansions and relocations, with feasibility studies, architecture and engineering solutions and investment estimates."
+            ]
+          },
+          {
+            "id": "diseno-organizacional-liderazgo-y-capacitacion",
+            "title": "Organizational design, leadership and training",
+            "paragraphs": [
+              "Structures, responsibilities and management models suited to each company’s needs. Development of management teams, coordination across areas, expense control and training programs linked to growth and changes in operations."
+            ]
+          },
+          {
+            "id": "expansion-comercial-y-optimizacion-de-gastos-y-costos",
+            "title": "Commercial expansion and expense and cost optimization",
+            "paragraphs": [
+              "Growth strategies, market development, sales channels and new business opportunities. Analysis of profitability, expense structure, operating costs, purchasing and procurement, with economic and commercial improvement plans that strengthen competitiveness and guide management and investment decisions."
+            ]
+          },
+          {
+            "id": "gerenciamiento-de-proyectos-de-transformacion-e-inversion",
+            "title": "Management of transformation and investment projects",
+            "paragraphs": [
+              "Planning and leadership of modernization, expansion and business change initiatives. Budgets, schedules, contracting, team coordination and monitoring of execution, with attention to meeting objectives, operational continuity and expected results."
+            ]
+          }
+        ],
+        "image": null,
+        "imageAlt": "",
+        "illustration": "productivo"
+      },
+      {
+        "id": "urbano",
+        "title": "Urban and Real Estate Development",
+        "label": "02 / Sector",
+        "description": "Services for private, public and mixed developments involving land, buildings and development areas that require the integration of urban planning, technical and economic criteria. Studies, planning, projects and investment structures to advance viable initiatives and coordinate their participants.",
+        "cta": "Ask about this sector",
+        "services": [
+          {
+            "id": "estudios-de-factibilidad-urbana-e-inmobiliaria",
+            "title": "Urban and real estate feasibility studies",
+            "paragraphs": [
+              "Assessment of assets and opportunities based on their territorial context, regulatory framework, demand and economic conditions. Alternative uses and development potential, commercial scenarios and investment estimates to support development decisions."
+            ]
+          },
+          {
+            "id": "planes-maestros-arquitectura-e-ingenieria",
+            "title": "Master plans, architecture and engineering",
+            "paragraphs": [
+              "Definition of uses, site layouts, phasing and infrastructure for sites, urban complexes and real estate developments. Development of spatial proposals and technical solutions, coordinating disciplines with levels of design suited to each project."
+            ]
+          },
+          {
+            "id": "estructuracion-juridica-y-financiera-de-desarrollos",
+            "title": "Legal and financial structuring of developments",
+            "paragraphs": [
+              "Participation and investment models to bring together landowners, developers, operators and funders. Economic evaluation, organization of contributions and returns, corporate instruments and contractual agreements that make each initiative viable."
+            ]
+          },
+          {
+            "id": "gerenciamiento-de-proyectos-inmobiliarios",
+            "title": "Real estate project management",
+            "paragraphs": [
+              "Organization and coordination of developments from definition through execution. Management of technical teams, budgets, timelines, procurement and contracting, tracking milestones, risks and commitments between the parties."
+            ]
+          }
+        ],
+        "image": null,
+        "imageAlt": "",
+        "illustration": "urbano"
+      },
+      {
+        "id": "infraestructura",
+        "title": "Infrastructure and Transport",
+        "label": "03 / Sector",
+        "description": "Studies and projects to improve connectivity, the operation of networks and the performance of logistics and transport systems. Planning, engineering, investment structuring and program management in public, private and inter-institutional settings.",
+        "cta": "Ask about this sector",
+        "services": [
+          {
+            "id": "estudios-de-demanda-y-movilidad",
+            "title": "Demand and mobility studies",
+            "paragraphs": [
+              "Characterization of freight and passenger flows, operating patterns, connectivity needs and the evolution of markets and regions. Projections and scenarios to size services, identify constraints and guide investment."
+            ]
+          },
+          {
+            "id": "planificacion-logistica-e-ingenieria-de-infraestructura",
+            "title": "Logistics planning and infrastructure engineering",
+            "paragraphs": [
+              "Assessment of corridors, hubs, networks and operating systems, focusing on capacity, costs, times and reliability. Organizational and location alternatives, functional solutions, preliminary designs and technical documentation for their development."
+            ]
+          },
+          {
+            "id": "estructuracion-de-inversiones-y-contratos-de-infraestructura",
+            "title": "Structuring of infrastructure investments and contracts",
+            "paragraphs": [
+              "Analysis of economic viability, financing schemes, regulatory frameworks and allocation of responsibilities. Public-private participation models, tender documents and agreements to prepare projects and facilitate their execution."
+            ]
+          },
+          {
+            "id": "gerenciamiento-de-proyectos-y-programas",
+            "title": "Project and program management",
+            "paragraphs": [
+              "Technical, institutional and contractual coordination of investments of different scales. Organization of teams, schedules, budgets and procurement processes; physical and financial monitoring, interface management and progress control."
+            ]
+          }
+        ],
+        "image": null,
+        "imageAlt": "",
+        "illustration": "infraestructura"
+      }
+    ]
+  },
+  "specialties": {
+    "title": "Cross-cutting capabilities.",
+    "lead": "Four specialties to structure, position and manage complex projects and processes, combined to fit each engagement.",
+    "items": [
+      {
+        "id": "estrategia",
+        "title": "Strategy",
+        "label": "01 / Cross-cutting capability",
+        "description": "Information, criteria and alternatives for growth, investment and transformation decisions. Applied to companies, regions, economic sectors and development programs.",
+        "cta": "Ask about this specialty",
+        "services": [
+          {
+            "id": "estudios-de-mercado-y-demanda",
+            "title": "Market and demand studies",
+            "paragraphs": [
+              "Analysis of sectors, competitors, customers and users, with estimates of size, trends and commercial potential. Quantitative and qualitative research to identify opportunities and support projects, investments and policies."
+            ]
+          },
+          {
+            "id": "diagnosticos-y-estudios-de-factibilidad",
+            "title": "Assessments and feasibility studies",
+            "paragraphs": [
+              "Comprehensive evaluation of situations and development alternatives. Technical, operational, commercial, institutional and economic viability, identifying constraints, risks and requirements to move forward."
+            ]
+          },
+          {
+            "id": "modelos-de-negocio-y-estrategias-de-inversion",
+            "title": "Business models and investment strategies",
+            "paragraphs": [
+              "Definition of value propositions, revenue models, cost structures and ways of operating. Comparison of scenarios to guide new activities, expansion, diversification and capital decisions."
+            ]
+          },
+          {
+            "id": "planes-estrategicos-y-de-desarrollo",
+            "title": "Strategic and development plans",
+            "paragraphs": [
+              "Objectives, priorities, initiatives and implementation sequences for organizations, production chains and regions. Growth, transformation and investment programs with resources, responsibilities and monitoring criteria."
+            ]
+          }
+        ],
+        "image": null,
+        "imageAlt": "",
+        "illustration": "estrategia"
+      },
+      {
+        "id": "organizacion",
+        "title": "Culture, Leadership and Organization",
+        "label": "02 / Cross-cutting capability",
+        "description": "Leadership, coordination and operational capabilities to support the performance and evolution of organizations. Integration of organizational, human and technical approaches.",
+        "cta": "Ask about this specialty",
+        "services": [
+          {
+            "id": "diagnostico-y-diseno-organizacional",
+            "title": "Organizational assessment and design",
+            "paragraphs": [
+              "Analysis of structures, responsibilities, working relationships and decision-making. Configuration of management models, coordination mechanisms and indicators suited to the strategy and scale of each institution."
+            ]
+          },
+          {
+            "id": "ingenieria-y-mejora-de-procesos",
+            "title": "Process engineering and improvement",
+            "paragraphs": [
+              "Evaluation of operational and administrative workflows to increase productivity, quality and reliability. Redesign of tasks, interfaces, resources and information systems, with implementation and monitoring criteria."
+            ]
+          },
+          {
+            "id": "programas-de-formacion-y-capacitacion",
+            "title": "Education and training programs",
+            "paragraphs": [
+              "Development of technical, leadership and management skills based on specific needs. Learning paths, content, learning formats and mechanisms to verify their application on the job."
+            ]
+          },
+          {
+            "id": "desarrollo-de-liderazgo-y-transformacion-organizacional",
+            "title": "Leadership development and organizational transformation",
+            "paragraphs": [
+              "Strengthening of management teams, leadership practices and collaboration across areas. Support for cultural and management change, with attention to the adoption of new responsibilities and ways of working."
+            ]
+          }
+        ],
+        "image": null,
+        "imageAlt": "",
+        "illustration": "organizacion"
+      },
+      {
+        "id": "proyectos",
+        "title": "Project Design and Management",
+        "label": "03 / Cross-cutting capability",
+        "description": "Technical and management capabilities throughout the investment cycle, from the definition of an initiative to its contracting, implementation and control.",
+        "cta": "Ask about this specialty",
+        "services": [
+          {
+            "id": "formulacion-y-evaluacion-de-proyectos",
+            "title": "Project formulation and appraisal",
+            "paragraphs": [
+              "Definition of objectives, needs, scope and alternative solutions. Preliminary studies, sizing, cost estimates, risk analysis and phase planning to prepare investment decisions."
+            ]
+          },
+          {
+            "id": "arquitectura-urbanismo-y-planes-maestros",
+            "title": "Architecture, urban planning and master plans",
+            "paragraphs": [
+              "Proposals for spatial organization, uses, site layout and development phases. Preliminary designs and design documentation for buildings, complexes, large sites and urban areas, coordinating the disciplines involved."
+            ]
+          },
+          {
+            "id": "estudios-tecnicos-e-ingenieria",
+            "title": "Technical studies and engineering",
+            "paragraphs": [
+              "Development of design criteria, functional analyses and conceptual, basic or detailed solutions depending on the stage of development. Specifications, budgets and interdisciplinary coordination for their evaluation and execution."
+            ]
+          },
+          {
+            "id": "documentacion-tecnica-y-procesos-de-contratacion",
+            "title": "Technical documentation and procurement processes",
+            "paragraphs": [
+              "Preparation of terms of reference, tender documents, specifications and budgets. Organization of tenders and competitions, support with bidder queries and evaluation of offers for purchases, works and professional services."
+            ]
+          },
+          {
+            "id": "gerenciamiento-y-control-de-proyectos",
+            "title": "Project management and control",
+            "paragraphs": [
+              "Direction and monitoring of scope, time, cost, quality and risk. Coordination of teams and contractors, interface management and progress documentation to support decisions during execution."
+            ]
+          }
+        ],
+        "image": null,
+        "imageAlt": "",
+        "illustration": "proyectos"
+      },
+      {
+        "id": "estructuracion",
+        "title": "Legal and Financial Structuring",
+        "label": "04 / Cross-cutting capability",
+        "description": "Economic, corporate and contractual instruments to organize investments, allocate responsibilities and make projects with multiple participants viable.",
+        "cta": "Ask about this specialty",
+        "services": [
+          {
+            "id": "modelizacion-y-evaluacion-economico-financiera",
+            "title": "Economic and financial modeling and evaluation",
+            "paragraphs": [
+              "Projections of revenues, expenditures, investment and financing; cash flows, return indicators and sensitivity analysis. Comparison of alternatives and risks to support decisions and negotiations."
+            ]
+          },
+          {
+            "id": "estructuracion-juridica-de-proyectos-e-inversiones",
+            "title": "Legal structuring of projects and investments",
+            "paragraphs": [
+              "Design of vehicles, participation schemes and the allocation of rights, obligations and contingencies. Consideration of the regulatory frameworks and institutional conditions of each initiative."
+            ]
+          },
+          {
+            "id": "contratos-y-procesos-de-negociacion",
+            "title": "Contracts and negotiation processes",
+            "paragraphs": [
+              "Preparation and review of instruments for investments, services, developments and construction works. Commercial terms, commitments, guarantees and mechanisms for resolving disputes between the parties."
+            ]
+          },
+          {
+            "id": "estructuracion-financiera-y-modelos-de-participacion",
+            "title": "Financial structuring and participation models",
+            "paragraphs": [
+              "Equity, debt and hybrid alternatives, including public-private partnership arrangements. Organization of contributions, returns and agreements among owners, investors, operators and funding institutions."
+            ]
+          }
+        ],
+        "image": null,
+        "imageAlt": "",
+        "illustration": "estructuracion"
+      }
+    ]
+  },
+  "about": {
+    "title": "Experience in real-world settings.",
+    "paragraphs": [
+      "We work with public agencies, companies and development stakeholders on infrastructure, production, logistics and regional projects, bringing an integrated view and a deep understanding of local conditions.",
+      "GAPS is a professional services firm focused on developing projects, organizations and regions. We bring strategy, management and structuring together to turn opportunities into viable initiatives with clear direction."
+    ],
+    "callout": "Experience in the public sector, public-private partnerships and a deep knowledge of Argentina’s emerging production corridors: agriculture, mining and energy."
+  },
+  "capabilities": {
+    "label": "Integrated capabilities",
+    "title": "Teams tailored to each project.",
+    "lead": "We bring expertise, management and local knowledge together in a single team.",
+    "items": [
+      "Business and finance",
+      "Public policy and regulation",
+      "Markets and regions",
+      "Architecture and engineering",
+      "Contracts and procurement",
+      "Project management and controls",
+      "Organization and operations"
+    ]
+  },
+  "quote": "We bring strategy, positioning and management together to turn opportunities into projects with clear direction.",
+  "contact": {
+    "title": "Let’s talk.",
+    "lead": "Tell us what you need to solve. We’ll get back to you by email or WhatsApp, whichever you prefer.",
+    "channels": "<ul class=\"channels\">\n        <li><a href=\"mailto:contacto@gapsconsultores.com.ar\"><svg class=\"ico\" viewBox=\"0 0 32 32\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"4\" y=\"7\" width=\"24\" height=\"18\" rx=\"1\" /><path class=\"a\" d=\"M4 9l12 9 12-9\" /></svg><span><small>Email</small><span class=\"v\">contacto@gapsconsultores.com.ar</span></span></a></li>\n        <li><a href=\"https://wa.me/5491162466346?text=Hello%2C%20I%E2%80%99m%20reaching%20out%20from%20the%20GAPS%20website.\" target=\"_blank\" rel=\"noopener\"><svg class=\"ico\" viewBox=\"0 0 32 32\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M6 26l1.6-5A11 11 0 1 1 11 24.5z\" /><path class=\"a\" d=\"M12 12c0 4 4 8 8 8l1.5-2-3-1.5-1 1c-1.5-.5-3-2-3.5-3.5l1-1L13.5 10z\" /></svg><span><small>WhatsApp</small><span class=\"v\">+54 9 11 6246-6346</span></span></a></li>\n        <li><a href=\"https://www.linkedin.com/company/gaps-consultores\" target=\"_blank\" rel=\"noopener\"><svg class=\"ico\" viewBox=\"0 0 32 32\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"4\" y=\"4\" width=\"24\" height=\"24\" rx=\"2\" /><path d=\"M10 14v9M10 9.5v.5\" /><path class=\"a\" d=\"M15 23v-9M15 18c0-3 6-4 6 0v5\" /></svg><span><small>LinkedIn</small><span class=\"v\">GAPS Consultores</span></span></a></li>\n      </ul>",
+    "form": "<form class=\"form\" id=\"contactForm\" action=\"https://formsubmit.co/contacto@gapsconsultores.com.ar\" method=\"POST\" novalidate data-endpoint=\"https://formsubmit.co/ajax/contacto@gapsconsultores.com.ar\" data-subject=\"New inquiry from the website (EN)\" data-sending=\"Sending…\" data-ok=\"<strong>Thank you! We’ve received your message and will be in touch shortly.</strong>\" data-fail=\"We couldn’t send the form. Please email us at <a href=&quot;mailto:contacto@gapsconsultores.com.ar&quot;>contacto@gapsconsultores.com.ar</a> or reach us on <a href=&quot;https://wa.me/5491162466346?text=Hello%2C%20I%E2%80%99m%20reaching%20out%20from%20the%20GAPS%20website.&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>WhatsApp</a>.\">\n        <h3>Send us a message</h3>\n        <p class=\"hint\">Fields marked * are required.</p>\n        <input type=\"hidden\" name=\"_template\" value=\"table\"><input type=\"hidden\" name=\"_captcha\" value=\"false\"><input type=\"hidden\" name=\"Idioma\" value=\"English\">\n        <div class=\"hp\" aria-hidden=\"true\"><label>No completar <input type=\"text\" name=\"_honey\" tabindex=\"-1\" autocomplete=\"off\"></label></div>\n        <div class=\"fields\">\n          <div class=\"field\"><label for=\"f-nombre\">Full name *</label><input maxlength=\"254\" id=\"f-nombre\" name=\"Nombre\" type=\"text\" autocomplete=\"name\" data-required=\"\" required aria-describedby=\"e-nombre\"><span class=\"err\" id=\"e-nombre\">Please fill in this field.</span></div>\n          <div class=\"field\"><label for=\"f-email\">Email *</label><input maxlength=\"254\" id=\"f-email\" name=\"Email\" type=\"email\" autocomplete=\"email\" inputmode=\"email\" data-required=\"\" required aria-describedby=\"e-email\"><span class=\"err\" id=\"e-email\">Please check your email address.</span></div>\n          <div class=\"field\"><label for=\"f-org\">Organization <span class=\"opt\">(optional)</span></label><input maxlength=\"254\" id=\"f-org\" name=\"Organizacion\" type=\"text\" autocomplete=\"organization\"></div>\n          <div class=\"field\"><label for=\"f-tel\">Phone <span class=\"opt\">(optional)</span></label><input maxlength=\"254\" id=\"f-tel\" name=\"Telefono\" type=\"tel\" autocomplete=\"tel\" inputmode=\"tel\"></div>\n          <div class=\"field full\"><label for=\"f-interes\">What would you like to discuss? <span class=\"opt\">(optional)</span></label><select id=\"f-interes\" name=\"interes\"><option value=\"\">Choose an option</option><optgroup label=\"Sectors\"><option value=\"productivo\">Industrial and Corporate</option><option value=\"urbano\">Urban and Real Estate Development</option><option value=\"infraestructura\">Infrastructure and Transport</option></optgroup><optgroup label=\"Specialties\"><option value=\"estrategia\">Strategy</option><option value=\"organizacion\">Culture, Leadership and Organization</option><option value=\"proyectos\">Project Design and Management</option><option value=\"estructuracion\">Legal and Financial Structuring</option></optgroup><option value=\"otro\">Something else / not sure yet</option></select></div>\n          <div class=\"field full\"><label for=\"f-msg\">Message *</label><textarea maxlength=\"5000\" id=\"f-msg\" name=\"Mensaje\" rows=\"4\" placeholder=\"Briefly tell us about the project, its current stage and what you need.\" data-required=\"\" required aria-describedby=\"e-msg\"></textarea><span class=\"err\" id=\"e-msg\">Please fill in this field.</span></div>\n        </div>\n        <div class=\"form-foot\">\n          <p class=\"privacy\">We only use this information to reply to your inquiry.</p>\n          <button class=\"btn btn-primary\" type=\"submit\"><span>Send message</span> <span aria-hidden=\"true\">→</span></button>\n        </div>\n        <div class=\"form-status\" id=\"formStatus\" role=\"status\" aria-live=\"polite\"></div>\n      </form>"
+  }
+}

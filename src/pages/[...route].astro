@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Diagram from '../components/Diagram.astro';
+import HeroNetwork from '../components/HeroNetwork.astro';
+import Capabilities from '../components/Capabilities.astro';
+import map from '../data/map.svg?raw';
+import { content, href, type Language, type Page } from '../lib/content';
+import { entries, editorialLabels, publishedLinks, type Category, type EditorialEntry } from '../lib/editorial';
+import EditorialIndex from '../components/EditorialIndex.astro';
+import EditorialArticle from '../components/EditorialArticle.astro';
+export const prerender = true;
+
+export function getStaticPaths() {
+  const pages = (['es', 'en'] as const).flatMap(lang => (['home', 'sectors', 'specialties', 'about', 'cases', 'publications', 'news'] as const).map(page => ({
+    params: { route: href(lang, page).replace(/^\//, '').replace(/\/$/, '') || undefined }, props: { lang, page },
+  })));
+  const articles = (['es', 'en'] as const).flatMap(lang => (['cases', 'publications', 'news'] as const).flatMap(page => entries(lang, page).map(entry => ({ params: { route: `${href(lang, page)}${entry.slug}`.replace(/^\//, '') }, props: { lang, page, entry } }))));
+  return [...pages, ...articles];
+}
+const { lang, page, entry } = Astro.props as { lang: Language; page: Page; entry?: EditorialEntry };
+const d = content[lang];
+const es = lang === 'es';
+const group = page === 'sectors' ? d.sectors : d.specialties;
+const editorial = ['cases', 'publications', 'news'].includes(page);
+const title = entry?.title || (editorial ? editorialLabels[lang][page as Category] : page === 'home' ? undefined : page === 'about' ? d.nav[2] : page === 'sectors' ? d.nav[0] : d.nav[1]);
+const provinces = [...map.matchAll(/data-province="([^"]+)"/g)].map(match => match[1]);
+---
+<Layout lang={lang} page={page} title={title} description={entry?.summary} languageAlternates={!entry}>
+  {editorial && (entry ? <EditorialArticle lang={lang} entry={entry}/> : <EditorialIndex lang={lang} category={page as Category}/>)}
+  {page === 'home' && <>
+    <section class="hero wrap">
+      <div class="hero-copy"><p class="eyebrow">{d.hero.eyebrow}</p>
+        <h1>{d.hero.title}</h1>
+        <p class="hero-intro">{d.hero.intro}</p>
+        <div class="hero-actions"><a class="button button-primary" href="#contacto" data-contact>{d.hero.cta}<span aria-hidden="true">↗</span></a><a class="button button-secondary" href={href(lang, 'sectors')}>{d.hero.secondary}<span aria-hidden="true">↓</span></a></div>
+        <details class="hero-traits"><summary>{d.hero.traits[0]} <span aria-hidden="true">+</span></summary><ul>{d.hero.traits.slice(1).map(trait => <li>{trait}</li>)}</ul></details>
+      </div>
+      <HeroNetwork lang={lang} />
+    </section>
+    <section class="pillars"><div class="wrap grid gap-6 md:grid-cols-3">{d.pillars.map((item, i) => <div class="pillar"><span class="num">0{i + 1}</span><div><h2>{item.title}</h2><p>{item.body}</p></div></div>)}</div></section>
+    <section class="section wrap" id="sectores">
+      <div class="section-heading"><div><p class="eyebrow">{d.nav[0]}</p><h2>{d.sections[0].title}</h2></div><p>{d.sections[0].lead}</p></div>
+      <div class="sector-cards grid gap-4 md:grid-cols-3">{d.sectors.items.map((item, i) => <a class="sector-card" href={`${href(lang, 'sectors')}#${item.id}`}><span class="card-number">0{i + 1} / Sector</span><h3>{item.title}</h3>{item.image ? <img class="technical-drawing editorial-image" src={item.image} alt={item.imageAlt} width="640" height="400" loading="lazy"/> : <Diagram kind={item.illustration} />}<span class="card-link">{es ? 'Ver el sector' : 'View sector'}<span aria-hidden="true">↗</span></span></a>)}</div>
+      {d.sections[0].link && <a class="text-link section-more" href={href(lang, 'sectors')}>{d.sections[0].link} ↗</a>}
+    </section>
+    <section class="specialty-section" id="especialidades"><div class="wrap">
+      <div class="section-heading"><div><p class="eyebrow">{d.nav[1]}</p><h2>{d.sections[1].title}</h2></div><p>{d.sections[1].lead}</p></div>
+      <div class="specialty-links grid md:grid-cols-4">{d.specialties.items.map((item, i) => <a href={`${href(lang, 'specialties')}#${item.id}`}><span class="num">0{i + 1}</span><h3>{item.title}</h3><span class="link-arrow" aria-hidden="true">↗</span></a>)}</div>
+      {d.sections[1].link && <a class="text-link section-more" href={href(lang, 'specialties')}>{d.sections[1].link} ↗</a>}
+    </div></section>
+    <section class="section wrap home-about" id="nosotros"><div><p class="eyebrow">{d.nav[2]}</p><h2>{d.about.title}</h2><p>{d.about.paragraphs[0]}</p><a class="text-link" href={href(lang, 'about')}>{d.nav[2]} <span aria-hidden="true">↗</span></a></div><div><p class="eyebrow">{d.capabilities.label}</p><h3>{d.capabilities.title}</h3><p>{d.capabilities.lead}</p><Capabilities items={d.capabilities.items} label={d.capabilities.label} /></div></section>
+    {publishedLinks(lang).length > 0 && <section class="section wrap knowledge-links"><p class="eyebrow">{es ? 'Conocimiento y experiencia' : 'Knowledge and experience'}</p>{publishedLinks(lang).map(category => <a class="text-link" href={href(lang, category)}>{editorialLabels[lang][category]} ↗</a>)}</section>}
+  </>}
+  {(page === 'sectors' || page === 'specialties') && <>
+    <section class="page-heading wrap"><p class="eyebrow">{title}</p><h1>{group.title}</h1><p>{group.lead}</p></section>
+    <div class="catalogue wrap" data-catalogue>
+      <nav class="catalogue-nav" aria-label={title}>
+        {group.items.map((item, i) => <a href={`#${item.id}`} data-panel-link={item.id}><span class="num">0{i + 1}</span>{item.title}<span class="panel-arrow" aria-hidden="true">↗</span></a>)}
+      </nav>
+      <label class="mobile-section-select">{es ? 'Ir a' : 'Go to'}<select data-panel-select>{group.items.map(item => <option value={item.id}>{item.title}</option>)}</select></label>
+      {group.items.map(item => <section class="catalogue-panel" id={item.id} data-panel>
+        <div class="panel-intro"><div><p class="eyebrow">{item.label}</p><h2>{item.title}</h2><p>{item.description}</p><a href="#contacto" data-contact data-topic={item.id} class="button button-primary">{item.cta}<span aria-hidden="true">↗</span></a></div><div class="panel-drawing">{item.image ? <img class="editorial-image" src={item.image} alt={item.imageAlt} width="640" height="400" loading="lazy"/> : <Diagram kind={item.illustration} />}</div></div>
+        <div class="services-heading"><h3>{es ? 'Servicios' : 'Services'} <span class="num">/ {String(item.services.length).padStart(2, '0')}</span></h3><button class="expand-all" type="button" data-expand-all>{es ? 'Abrir todos' : 'Expand all'}</button></div>
+        <div class="services">{item.services.map((service, i) => <details id={service.id} class="service"><summary><span class="num">0{i + 1}</span><span>{service.title}</span><span class="service-toggle" aria-hidden="true">+</span></summary><div class="service-body">{service.paragraphs.map(p => <p>{p}</p>)}</div></details>)}</div>
+        <div class="panel-footer"><a class="text-link" href={href(lang, page === 'sectors' ? 'specialties' : 'sectors')}>{page === 'sectors' ? (es ? 'Ver especialidades' : 'View specialties') : (es ? 'Ver sectores' : 'View sectors')} ↗</a><a class="text-link" href={href(lang, 'home')}>{es ? 'Volver al inicio' : 'Back to home'} ↑</a></div>
+      </section>)}
+    </div>
+  </>}
+  {page === 'about' && <>
+    <section class="page-heading wrap"><p class="eyebrow">{d.nav[2]}</p><h1>{d.about.title}</h1></section>
+    <section class="wrap about-layout">
+      <div class="about-content">{d.about.paragraphs.map(p => <p>{p}</p>)}<div class="callout">{d.about.callout}</div>
+        <div class="about-pillars">{d.pillars.map(item => <div><h3>{item.title}</h3><p>{item.body}</p></div>)}</div>
+      </div>
+      <div class="map-card" data-map>
+        <div class="map-heading"><p class="eyebrow">{es ? 'Territorio' : 'Territory'}</p><p>{es ? 'Explorá las provincias' : 'Explore the provinces'}</p></div>
+        <div class="argentina-map" set:html={map} />
+        <label class="province-select">{es ? 'Provincia' : 'Province'}<select data-province-select><option value="">{es ? 'Seleccioná una provincia' : 'Select a province'}</option>{provinces.map(name => <option value={name}>{name}</option>)}</select></label>
+        <output class="province-name" data-province-name aria-live="polite">{es ? 'Pasá el cursor, tocá o seleccioná una provincia.' : 'Hover, tap or select a province.'}</output>
+      </div>
+    </section>
+    <section class="section wrap about-capabilities"><div><p class="eyebrow">{d.capabilities.label}</p><h2>{d.capabilities.title}</h2><p>{d.capabilities.lead}</p></div><Capabilities items={d.capabilities.items} label={d.capabilities.label} /></section>
+    <section class="quote-section"><div class="wrap"><blockquote>{d.quote}</blockquote></div></section>
+  </>}
+</Layout>

@@ -1,0 +1,69 @@
+{
+  "hint": "Fields marked * are required.",
+  "privacy": "We only use this information to reply to your inquiry.",
+  "submit": "Send message",
+  "topic": "What would you like to discuss? (optional)",
+  "choose": "Choose an option",
+  "other": "Infrastructure and Transport",
+  "sending": "Sending…",
+  "success": "Thank you! We’ve received your message and will be in touch shortly.",
+  "failure": "We couldn’t send the form. Please email us at contacto@gapsconsultores.com.ar or reach us on WhatsApp.",
+  "subject": "New inquiry from the website (EN)",
+  "fields": [
+    {
+      "id": "f-nombre",
+      "name": "Nombre",
+      "type": "text",
+      "label": "Full name *",
+      "placeholder": "",
+      "required": true,
+      "autocomplete": "name",
+      "error": "Please fill in this field.",
+      "errorId": "e-nombre"
+    },
+    {
+      "id": "f-email",
+      "name": "Email",
+      "type": "email",
+      "label": "Email *",
+      "placeholder": "",
+      "required": true,
+      "autocomplete": "email",
+      "error": "Please check your email address.",
+      "errorId": "e-email"
+    },
+    {
+      "id": "f-org",
+      "name": "Organizacion",
+      "type": "text",
+      "label": "Organization (optional)",
+      "placeholder": "",
+      "required": false,
+      "autocomplete": "organization",
+      "error": "",
+      "errorId": ""
+    },
+    {
+      "id": "f-tel",
+      "name": "Telefono",
+      "type": "tel",
+      "label": "Phone (optional)",
+      "placeholder": "",
+      "required": false,
+      "autocomplete": "tel",
+      "error": "",
+      "errorId": ""
+    },
+    {
+      "id": "f-msg",
+      "name": "Mensaje",
+      "type": "textarea",
+      "label": "Message *",
+      "placeholder": "Briefly tell us about the project, its current stage and what you need.",
+      "required": true,
+      "autocomplete": "",
+      "error": "Please fill in this field.",
+      "errorId": "e-msg"
+    }
+  ]
+}

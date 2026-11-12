@@ -1,0 +1,29 @@
+---
+import esLabels from '../data/form-es.json';
+import enLabels from '../data/form-en.json';
+import settings from '../data/settings.json';
+import { content, type Language } from '../lib/content';
+const { lang } = Astro.props as { lang: Language };
+const labels = lang === 'es' ? esLabels : enLabels;
+const d = content[lang];
+const escape = (text: string | undefined) => (text || '').replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
+---
+<form class="form" id="contactForm" action={`https://formsubmit.co/${settings.email}`} method="POST" novalidate data-endpoint={`https://formsubmit.co/ajax/${settings.email}`} data-subject={labels.subject} data-sending={labels.sending} data-ok={escape(labels.success)} data-fail={escape(labels.failure)}>
+  <p class="hint">{labels.hint}</p>
+  <input type="hidden" name="_template" value="table"/><input type="hidden" name="_captcha" value="false"/><input type="hidden" name="Idioma" value={lang === 'es' ? 'Español' : 'English'}/>
+  <div class="hp" aria-hidden="true"><label>No completar<input type="text" name="_honey" tabindex="-1" autocomplete="off"/></label></div>
+  <div class="fields">
+    {labels.fields.map(field => <>
+      {field.type === 'textarea' && <div class="field full"><label for="f-interes">{labels.topic}</label><select id="f-interes" name="interes"><option value="">{labels.choose}</option><optgroup label={d.nav[0]}>{d.sectors.items.map(item => <option value={item.id}>{item.title}</option>)}</optgroup><optgroup label={d.nav[1]}>{d.specialties.items.map(item => <option value={item.id}>{item.title}</option>)}</optgroup><option value="otro">{labels.other}</option></select></div>}
+      <div class:list={['field', { full: field.type === 'textarea' }]}>
+        <label for={field.id}>{field.label}</label>
+        {field.type === 'textarea'
+          ? <textarea id={field.id} name={field.name} rows="4" maxlength="5000" placeholder={field.placeholder} required={field.required} data-required={field.required ? '' : undefined} aria-describedby={field.errorId || undefined}></textarea>
+          : <input id={field.id} name={field.name} type={field.type as 'text' | 'email' | 'tel'} maxlength="254" autocomplete={field.autocomplete} placeholder={field.placeholder || undefined} required={field.required} data-required={field.required ? '' : undefined} aria-describedby={field.errorId || undefined}/>}
+        {field.errorId && <span class="err" id={field.errorId}>{field.error}</span>}
+      </div>
+    </>)}
+  </div>
+  <div class="form-foot"><p class="privacy">{labels.privacy}</p><button class="btn btn-primary" type="submit"><span>{labels.submit}</span><span aria-hidden="true">↗</span></button></div>
+  <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+</form>

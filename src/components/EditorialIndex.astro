@@ -1,0 +1,22 @@
+---
+import { entries, editorialLabels, type Category } from '../lib/editorial';
+import { href, content, type Language } from '../lib/content';
+const { lang, category } = Astro.props as { lang: Language; category: Category };
+const es = lang === 'es';
+const list = entries(lang, category);
+const regions = [...new Set(list.flatMap(entry => entry.region || []))].sort();
+---
+<section class="page-heading wrap"><p class="eyebrow">GAPS</p><h1>{editorialLabels[lang][category]}</h1></section>
+<section class="wrap editorial-index" data-editorial>
+  {list.length ? <>
+    <div class="editorial-filters"><label>{es ? 'Buscar' : 'Search'}<input type="search" data-entry-search placeholder={es ? 'Título o tema' : 'Title or topic'}/></label>
+      {category === 'cases' && <><label>{es ? 'Sector' : 'Sector'}<select data-entry-sector><option value="">{es ? 'Todos los sectores' : 'All sectors'}</option>{content[lang].sectors.items.map(item => <option value={item.id}>{item.title}</option>)}</select></label><label>{es ? 'Provincia o región' : 'Province or region'}<select data-entry-region><option value="">{es ? 'Todas las regiones' : 'All regions'}</option>{regions.map(region => <option value={region}>{region}</option>)}</select></label></>}
+    </div>
+    <div class="editorial-cards">{list.map(entry => <article class="editorial-card" data-entry data-search={`${entry.title} ${entry.summary}`} data-sector={entry.sector || ''} data-regions={JSON.stringify(entry.region || [])}>
+      {(entry.image || entry.photos?.[0]?.image) && <img src={entry.image || entry.photos?.[0]?.image!} alt={entry.imageAlt || entry.photos?.[0]?.alt || ''} width="900" height="600" loading="lazy"/>}
+      {entry.date && <time datetime={entry.date}>{new Date(`${entry.date}T12:00:00Z`).toLocaleDateString(es ? 'es-AR' : 'en-GB', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time>}
+      <h2><a href={`${href(lang, category)}${entry.slug}/`}>{entry.title}</a></h2><p>{entry.summary}</p><a class="text-link" href={`${href(lang, category)}${entry.slug}/`}>{es ? 'Leer más' : 'Read more'} ↗</a>
+    </article>)}</div>
+    <p class="editorial-empty" data-entry-empty hidden role="status">{es ? 'No hay resultados con estos filtros.' : 'No results match these filters.'}</p>
+  </> : <div class="editorial-empty"><p>{es ? 'Todavía no hay contenidos publicados en esta sección.' : 'No content has been published in this section yet.'}</p><a class="text-link" href={href(lang, 'home')}>{es ? 'Volver al inicio' : 'Back to home'} ↗</a></div>}
+</section>

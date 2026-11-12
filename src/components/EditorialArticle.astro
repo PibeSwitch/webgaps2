@@ -1,0 +1,17 @@
+---
+import { editorialLabels, type EditorialEntry } from '../lib/editorial';
+import { href, type Language } from '../lib/content';
+const { lang, entry } = Astro.props as { lang: Language; entry: EditorialEntry };
+const es = lang === 'es';
+const sections = entry.category === 'cases' ? [
+  { title: es ? 'Desafío' : 'Challenge', text: entry.challenge }, { title: es ? 'Solución' : 'Solution', text: entry.solution }, { title: es ? 'Resultados' : 'Results', text: entry.results },
+] : [{ title: '', text: entry.body }];
+---
+<article class="wrap editorial-article">
+  <header class="page-heading"><a class="eyebrow" href={href(lang, entry.category)}>{editorialLabels[lang][entry.category]} ↗</a><h1>{entry.title}</h1>{entry.date && <time datetime={entry.date}>{entry.date}</time>}<p>{entry.summary}</p>{entry.authors && <p>{entry.authors}</p>}{entry.region?.length && <p>{entry.region.join(' · ')}</p>}</header>
+  {entry.image && <img class="article-cover" src={entry.image} alt={entry.imageAlt || ''} width="1200" height="800"/>}
+  {sections.filter(section => section.text).map(section => <section class="article-section">{section.title && <h2>{section.title}</h2>}{section.text!.split(/\n\s*\n|\n/).filter(Boolean).map(paragraph => <p>{paragraph}</p>)}</section>)}
+  {entry.pdf && <a class="button button-primary" href={entry.pdf} target="_blank" rel="noopener noreferrer">{es ? 'Abrir publicación PDF' : 'Open PDF publication'} ↗</a>}
+  {entry.photos?.filter(photo => photo.image).map(photo => <figure class="article-photo"><img src={photo.image!} alt={photo.alt || ''} width="1200" height="800" loading="lazy"/>{photo.caption && <figcaption>{photo.caption}</figcaption>}</figure>)}
+  <a class="text-link" href={href(lang, entry.category)}>← {editorialLabels[lang][entry.category]}</a>
+</article>

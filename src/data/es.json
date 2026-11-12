@@ -1,0 +1,365 @@
+{
+  "lang": "es",
+  "title": "GAPS Consultoría y Desarrollos | Personas, proyectos y desarrollo",
+  "description": "Acompañamos a empresas e instituciones en el diseño, la estructuración y la gestión de proyectos que generan valor económico, territorial y social.",
+  "nav": [
+    "Sectores",
+    "Especialidades",
+    "Quiénes somos",
+    "Contacto"
+  ],
+  "hero": {
+    "eyebrow": "GAPS · Consultoría y desarrollos",
+    "title": "Personas, proyectos y desarrollo.",
+    "intro": "Acompañamos a empresas e instituciones en el diseño, la estructuración y la gestión de proyectos que generan valor económico, territorial y social.",
+    "cta": "Contanos tu proyecto",
+    "secondary": "Ver sectores",
+    "traits": [
+      "Mirada estratégica",
+      "Experiencia multisectorial",
+      "Articulación público-privada",
+      "Conocimiento territorial",
+      "Capacidad de ejecución"
+    ]
+  },
+  "pillars": [
+    {
+      "title": "Territorio",
+      "body": "Proyectos en distintas provincias, del NOA a Buenos Aires"
+    },
+    {
+      "title": "Alianzas",
+      "body": "Trabajo con firmas técnicas, operadores e instituciones financieras"
+    },
+    {
+      "title": "Resultados",
+      "body": "De la estrategia a proyectos concretos y ejecutables"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Conocimiento sectorial y visión de sistema.",
+      "lead": "Para impulsar inversiones y desarrollo. Cada sector reúne servicios que van desde los estudios iniciales hasta el gerenciamiento del proyecto.",
+      "link": "Todos los servicios por sector"
+    },
+    {
+      "title": "Capacidades transversales.",
+      "lead": "Para estructurar, posicionar y gestionar proyectos complejos. Las especialidades se combinan según lo que necesita cada proyecto, en cualquiera de los tres sectores.",
+      "link": "Todas las especialidades"
+    }
+  ],
+  "sectors": {
+    "title": "Conocimiento sectorial y visión de sistema.",
+    "lead": "Nuestra práctica se organiza en sectores donde convergen experiencia, redes y capacidad de ejecución. En cada uno, los servicios cubren desde los estudios iniciales hasta el gerenciamiento.",
+    "items": [
+      {
+        "id": "productivo",
+        "label": "01 / Sector",
+        "title": "Productivo y Corporativo",
+        "description": "Servicios para empresas industriales, comerciales y de servicios en sus procesos de crecimiento, mejora del desempeño y desarrollo de inversiones. Capacidades de estrategia comercial, gestión económica, organización, ingeniería y ejecución de proyectos, integradas según las necesidades del negocio.",
+        "cta": "Consultar por este sector",
+        "illustration": "productivo",
+        "services": [
+          {
+            "id": "diagnostico-e-ingenieria-de-procesos-e-instalaciones",
+            "title": "Diagnóstico e ingeniería de procesos e instalaciones",
+            "paragraphs": [
+              "Evaluación de operaciones y activos productivos, logísticos y corporativos para mejorar capacidad, productividad y confiabilidad. Rediseño de circuitos de trabajo, modernización, ampliaciones y relocalizaciones, con estudios de factibilidad, soluciones de arquitectura e ingeniería y estimaciones de inversión."
+            ]
+          },
+          {
+            "id": "diseno-organizacional-liderazgo-y-capacitacion",
+            "title": "Diseño organizacional, liderazgo y capacitación",
+            "paragraphs": [
+              "Estructuras, responsabilidades y modelos de gestión adecuados a las necesidades de cada empresa. Desarrollo de equipos de conducción, coordinación entre áreas, control de gastos y programas formativos vinculados con el crecimiento y los cambios en la operación."
+            ]
+          },
+          {
+            "id": "expansion-comercial-y-optimizacion-de-gastos-y-costos",
+            "title": "Expansión comercial y optimización de gastos y costos",
+            "paragraphs": [
+              "Estrategias de crecimiento, desarrollo de mercados, canales de venta y nuevas oportunidades de negocio. Análisis de rentabilidad, estructura de gastos, costos operativos, compras y abastecimiento, con planes de mejora económica y comercial que permitan fortalecer la competitividad y orientar decisiones de gestión e inversión."
+            ]
+          },
+          {
+            "id": "gerenciamiento-de-proyectos-de-transformacion-e-inversion",
+            "title": "Gerenciamiento de proyectos de transformación e inversión",
+            "paragraphs": [
+              "Planificación y conducción de iniciativas de modernización, expansión y cambio empresarial. Presupuestos, cronogramas, contrataciones, coordinación de equipos y seguimiento de la ejecución, con atención al cumplimiento de objetivos, la continuidad operativa y los resultados previstos."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "urbano",
+        "label": "02 / Sector",
+        "title": "Desarrollo Urbano e Inmobiliario",
+        "description": "Servicios para desarrollos privados, públicos y mixtos que requieren intervenciones sobre suelo, inmuebles y áreas de desarrollo que requieren integrar criterios urbanísticos, técnicos y económicos. Estudios, planificación, proyectos y estructuras de inversión para promover iniciativas viables y coordinar a sus participantes.",
+        "cta": "Consultar por este sector",
+        "illustration": "urbano",
+        "services": [
+          {
+            "id": "estudios-de-factibilidad-urbana-e-inmobiliaria",
+            "title": "Estudios de factibilidad urbana e inmobiliaria",
+            "paragraphs": [
+              "Evaluación de activos y oportunidades según su contexto territorial, marco normativo, demanda y condiciones económicas. Alternativas de uso y aprovechamiento, escenarios comerciales y estimaciones de inversión para sustentar decisiones de desarrollo."
+            ]
+          },
+          {
+            "id": "planes-maestros-arquitectura-e-ingenieria",
+            "title": "Planes maestros, arquitectura e ingeniería",
+            "paragraphs": [
+              "Definición de usos, implantaciones, etapas e infraestructura para predios, conjuntos urbanos y emprendimientos inmobiliarios. Desarrollo de propuestas espaciales y soluciones técnicas, con articulación entre especialidades y niveles de diseño acordes al proyecto."
+            ]
+          },
+          {
+            "id": "estructuracion-juridica-y-financiera-de-desarrollos",
+            "title": "Estructuración jurídica y financiera de desarrollos",
+            "paragraphs": [
+              "Modelos de participación y de inversión para articular propietarios, desarrolladores, operadores y financiadores. Evaluación económica, organización de aportes y retornos, instrumentos societarios y acuerdos contractuales que den viabilidad a cada iniciativa."
+            ]
+          },
+          {
+            "id": "gerenciamiento-de-proyectos-inmobiliarios",
+            "title": "Gerenciamiento de proyectos inmobiliarios",
+            "paragraphs": [
+              "Organización y coordinación de desarrollos desde su definición hasta la ejecución. Gestión de equipos técnicos, presupuestos, plazos, compras y contrataciones, con seguimiento de hitos, riesgos y compromisos entre las partes."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "infraestructura",
+        "label": "03 / Sector",
+        "title": "Infraestructura y Transporte",
+        "description": "Estudios y proyectos para mejorar la conectividad, el funcionamiento de redes y el desempeño de sistemas logísticos y de transporte. Planificación, ingeniería, estructuración de inversiones y gestión de programas en entornos públicos, privados y de articulación institucional.",
+        "cta": "Consultar por este sector",
+        "illustration": "infraestructura",
+        "services": [
+          {
+            "id": "estudios-de-demanda-y-movilidad",
+            "title": "Estudios de demanda y movilidad",
+            "paragraphs": [
+              "Caracterización de flujos de cargas y pasajeros, patrones de operación, necesidades de conectividad y evolución de mercados y territorios. Proyecciones y escenarios para dimensionar servicios, identificar restricciones y orientar inversiones."
+            ]
+          },
+          {
+            "id": "planificacion-logistica-e-ingenieria-de-infraestructura",
+            "title": "Planificación logística e ingeniería de infraestructura",
+            "paragraphs": [
+              "Evaluación de corredores, nodos, redes y sistemas operativos, con foco en capacidad, costos, tiempos y confiabilidad. Alternativas de organización y localización, soluciones funcionales, anteproyectos y documentación técnica para su desarrollo."
+            ]
+          },
+          {
+            "id": "estructuracion-de-inversiones-y-contratos-de-infraestructura",
+            "title": "Estructuración de inversiones y contratos de infraestructura",
+            "paragraphs": [
+              "Análisis de viabilidad económica, esquemas de financiamiento, marcos regulatorios y distribución de responsabilidades. Modelos de participación pública y privada, documentación licitatoria y acuerdos para preparar proyectos y facilitar su ejecución."
+            ]
+          },
+          {
+            "id": "gerenciamiento-de-proyectos-y-programas",
+            "title": "Gerenciamiento de proyectos y programas",
+            "paragraphs": [
+              "Coordinación técnica, institucional y contractual de inversiones de distinta escala. Organización de equipos, cronogramas, presupuestos y procesos de contratación; seguimiento físico y económico, gestión de interfaces y control del avance."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "specialties": {
+    "title": "Capacidades transversales.",
+    "lead": "Cuatro especialidades para estructurar, posicionar y gestionar proyectos y procesos complejos. Se combinan según lo que necesita cada trabajo.",
+    "items": [
+      {
+        "id": "estrategia",
+        "label": "01 / Capacidad transversal",
+        "title": "Estrategia",
+        "description": "Información, criterios y alternativas para decisiones de crecimiento, inversión y transformación. Aplicación en empresas, territorios, sectores económicos y programas de desarrollo.",
+        "cta": "Consultar por esta especialidad",
+        "illustration": "estrategia",
+        "services": [
+          {
+            "id": "estudios-de-mercado-y-demanda",
+            "title": "Estudios de mercado y demanda",
+            "paragraphs": [
+              "Análisis de sectores, competidores, clientes y usuarios, con estimaciones de tamaño, evolución y potencial comercial. Investigación cuantitativa y cualitativa para identificar oportunidades y sustentar proyectos, inversiones y políticas."
+            ]
+          },
+          {
+            "id": "diagnosticos-y-estudios-de-factibilidad",
+            "title": "Diagnósticos y estudios de factibilidad",
+            "paragraphs": [
+              "Evaluación integral de situaciones y alternativas de desarrollo. Viabilidad técnica, operativa, comercial, institucional y económica, con identificación de condicionantes, riesgos y requisitos para avanzar."
+            ]
+          },
+          {
+            "id": "modelos-de-negocio-y-estrategias-de-inversion",
+            "title": "Modelos de negocio y estrategias de inversión",
+            "paragraphs": [
+              "Definición de propuestas de valor, esquemas de ingresos, estructuras de costos y formas de operación. Comparación de escenarios para orientar nuevas actividades, expansión, diversificación y decisiones de capital."
+            ]
+          },
+          {
+            "id": "planes-estrategicos-y-de-desarrollo",
+            "title": "Planes estratégicos y de desarrollo",
+            "paragraphs": [
+              "Objetivos, prioridades, iniciativas y secuencias de implementación para organizaciones, cadenas productivas y territorios. Programas de crecimiento, transformación e inversión con recursos, responsabilidades y criterios de seguimiento."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "organizacion",
+        "label": "02 / Capacidad transversal",
+        "title": "Cultura, Liderazgo y Organización",
+        "description": "Capacidades de conducción, coordinación y operación para acompañar el desempeño y la evolución de las organizaciones. Integración de enfoques organizacionales, humanos y técnicos.",
+        "cta": "Consultar por esta especialidad",
+        "illustration": "organizacion",
+        "services": [
+          {
+            "id": "diagnostico-y-diseno-organizacional",
+            "title": "Diagnóstico y diseño organizacional",
+            "paragraphs": [
+              "Análisis de estructuras, responsabilidades, relaciones de trabajo y toma de decisiones. Configuración de modelos de gestión, mecanismos de coordinación e indicadores adecuados a la estrategia y escala de cada institución."
+            ]
+          },
+          {
+            "id": "ingenieria-y-mejora-de-procesos",
+            "title": "Ingeniería y mejora de procesos",
+            "paragraphs": [
+              "Evaluación de flujos operativos y administrativos para aumentar productividad, calidad y confiabilidad. Rediseño de tareas, interfaces, recursos y sistemas de información, con criterios de implementación y seguimiento."
+            ]
+          },
+          {
+            "id": "programas-de-formacion-y-capacitacion",
+            "title": "Programas de formación y capacitación",
+            "paragraphs": [
+              "Desarrollo de competencias técnicas, directivas y de gestión a partir de necesidades específicas. Itinerarios formativos, contenidos, modalidades de aprendizaje y mecanismos para verificar su aplicación en el trabajo."
+            ]
+          },
+          {
+            "id": "desarrollo-de-liderazgo-y-transformacion-organizacional",
+            "title": "Desarrollo de liderazgo y transformación organizacional",
+            "paragraphs": [
+              "Fortalecimiento de equipos directivos, prácticas de conducción y colaboración entre áreas. Acompañamiento de cambios culturales y de gestión, con atención a la adopción de nuevas responsabilidades y formas de trabajo."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "proyectos",
+        "label": "03 / Capacidad transversal",
+        "title": "Diseño y Gestión de Proyectos",
+        "description": "Capacidades técnicas y de dirección a lo largo del ciclo de inversión, desde la definición de una iniciativa hasta su contratación, implementación y control.",
+        "cta": "Consultar por esta especialidad",
+        "illustration": "proyectos",
+        "services": [
+          {
+            "id": "formulacion-y-evaluacion-de-proyectos",
+            "title": "Formulación y evaluación de proyectos",
+            "paragraphs": [
+              "Definición de objetivos, necesidades, alcance y alternativas de solución. Estudios preliminares, dimensionamiento, estimaciones económicas, análisis de riesgos y programación de etapas para preparar decisiones de inversión."
+            ]
+          },
+          {
+            "id": "arquitectura-urbanismo-y-planes-maestros",
+            "title": "Arquitectura, urbanismo y planes maestros",
+            "paragraphs": [
+              "Propuestas de organización espacial, usos, implantación y etapas de desarrollo. Anteproyectos y documentación de diseño para edificios, conjuntos, grandes predios y áreas urbanas, con coordinación de especialidades."
+            ]
+          },
+          {
+            "id": "estudios-tecnicos-e-ingenieria",
+            "title": "Estudios técnicos e ingeniería",
+            "paragraphs": [
+              "Desarrollo de bases de diseño, análisis funcionales y soluciones conceptuales, básicas o de detalle según el grado de avance. Especificaciones, presupuestos y coordinación interdisciplinaria para su evaluación y ejecución."
+            ]
+          },
+          {
+            "id": "documentacion-tecnica-y-procesos-de-contratacion",
+            "title": "Documentación técnica y procesos de contratación",
+            "paragraphs": [
+              "Preparación de términos de referencia, pliegos, especificaciones y presupuestos. Organización de licitaciones y concursos, asistencia a consultas y evaluación de ofertas para compras, obras y servicios profesionales."
+            ]
+          },
+          {
+            "id": "gerenciamiento-y-control-de-proyectos",
+            "title": "Gerenciamiento y control de proyectos",
+            "paragraphs": [
+              "Dirección y seguimiento de alcance, tiempos, costos, calidad y riesgos. Coordinación de equipos y contratistas, gestión de interfaces y documentación de avances para respaldar decisiones durante la ejecución."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "estructuracion",
+        "label": "04 / Capacidad transversal",
+        "title": "Estructuración Jurídica y Financiera",
+        "description": "Instrumentos económicos, societarios y contractuales para organizar inversiones, distribuir responsabilidades y hacer viables proyectos con múltiples participantes.",
+        "cta": "Consultar por esta especialidad",
+        "illustration": "estructuracion",
+        "services": [
+          {
+            "id": "modelizacion-y-evaluacion-economico-financiera",
+            "title": "Modelización y evaluación económico-financiera",
+            "paragraphs": [
+              "Proyecciones de ingresos, egresos, inversión y financiamiento; flujos de fondos, indicadores de rentabilidad y análisis de sensibilidad. Comparación de alternativas y riesgos para sustentar decisiones y negociaciones."
+            ]
+          },
+          {
+            "id": "estructuracion-juridica-de-proyectos-e-inversiones",
+            "title": "Estructuración jurídica de proyectos e inversiones",
+            "paragraphs": [
+              "Diseño de vehículos, esquemas de participación y asignación de derechos, obligaciones y contingencias. Consideración de los marcos regulatorios y de las condiciones institucionales de cada iniciativa."
+            ]
+          },
+          {
+            "id": "contratos-y-procesos-de-negociacion",
+            "title": "Contratos y procesos de negociación",
+            "paragraphs": [
+              "Preparación y revisión de instrumentos para inversiones, servicios, desarrollos y ejecución de obras. Condiciones comerciales, compromisos, garantías y mecanismos de resolución de diferencias entre las partes."
+            ]
+          },
+          {
+            "id": "estructuracion-financiera-y-modelos-de-participacion",
+            "title": "Estructuración financiera y modelos de participación",
+            "paragraphs": [
+              "Alternativas de capital, deuda y esquemas mixtos, incluidas modalidades de colaboración público-privada. Organización de aportes, retornos y acuerdos entre propietarios, inversores, operadores y entidades financiadoras."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "Experiencia en contextos reales.",
+    "paragraphs": [
+      "Trabajamos con organismos públicos, empresas y actores del desarrollo en proyectos de infraestructura, producción, logística y territorio, con una visión integral y una fuerte comprensión del contexto local.",
+      "GAPS es una firma de servicios profesionales orientada al desarrollo de proyectos, organizaciones y territorios. Integramos estrategia, gestión y estructuración para transformar oportunidades en iniciativas viables y con dirección."
+    ],
+    "callout": "Experiencia en sector público, articulación público-privada y conocimiento de los corredores productivos en desarrollo: agro, minería y energía."
+  },
+  "capabilities": {
+    "label": "Integración de capacidades",
+    "title": "Equipos a medida para cada proyecto.",
+    "lead": "Integramos conocimiento, gestión y territorio en un mismo equipo de trabajo.",
+    "items": [
+      "Negocio y finanzas",
+      "Políticas públicas y regulación",
+      "Mercados y territorio",
+      "Arquitectura e ingeniería",
+      "Contratos y procurement",
+      "Gestión de proyectos y project controls",
+      "Organización y operación"
+    ]
+  },
+  "quote": "Integramos estrategia, posicionamiento y gestión para convertir oportunidades en proyectos con dirección.",
+  "contact": {
+    "title": "Conversemos.",
+    "lead": "Contanos qué necesitás resolver. Te respondemos por correo o por WhatsApp, como prefieras.",
+    "channels": "<ul class=\"channels\">\n        <li><a href=\"mailto:contacto@gapsconsultores.com.ar\"><svg class=\"ico\" viewBox=\"0 0 32 32\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"4\" y=\"7\" width=\"24\" height=\"18\" rx=\"1\" /><path class=\"a\" d=\"M4 9l12 9 12-9\" /></svg><span><small>Correo</small><span class=\"v\">contacto@gapsconsultores.com.ar</span></span></a></li>\n        <li><a href=\"https://wa.me/5491162466346?text=Hola%2C%20les%20escribo%20desde%20el%20sitio%20web%20de%20GAPS.\" target=\"_blank\" rel=\"noopener\"><svg class=\"ico\" viewBox=\"0 0 32 32\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M6 26l1.6-5A11 11 0 1 1 11 24.5z\" /><path class=\"a\" d=\"M12 12c0 4 4 8 8 8l1.5-2-3-1.5-1 1c-1.5-.5-3-2-3.5-3.5l1-1L13.5 10z\" /></svg><span><small>WhatsApp</small><span class=\"v\">+54 9 11 6246-6346</span></span></a></li>\n        <li><a href=\"https://www.linkedin.com/company/gaps-consultores\" target=\"_blank\" rel=\"noopener\"><svg class=\"ico\" viewBox=\"0 0 32 32\" aria-hidden=\"true\" focusable=\"false\"><rect x=\"4\" y=\"4\" width=\"24\" height=\"24\" rx=\"2\" /><path d=\"M10 14v9M10 9.5v.5\" /><path class=\"a\" d=\"M15 23v-9M15 18c0-3 6-4 6 0v5\" /></svg><span><small>LinkedIn</small><span class=\"v\">GAPS Consultores</span></span></a></li>\n      </ul>",
+    "form": "<form class=\"form\" id=\"contactForm\" action=\"https://formsubmit.co/contacto@gapsconsultores.com.ar\" method=\"POST\" novalidate data-endpoint=\"https://formsubmit.co/ajax/contacto@gapsconsultores.com.ar\" data-subject=\"Nueva consulta desde el sitio web\" data-sending=\"Enviando…\" data-ok=\"<strong>¡Gracias! Recibimos tu consulta y te vamos a responder a la brevedad.</strong>\" data-fail=\"No pudimos enviar el formulario. Escribinos directamente a <a href=&quot;mailto:contacto@gapsconsultores.com.ar&quot;>contacto@gapsconsultores.com.ar</a> o por <a href=&quot;https://wa.me/5491162466346?text=Hola%2C%20les%20escribo%20desde%20el%20sitio%20web%20de%20GAPS.&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>WhatsApp</a>.\">\n        <h3>Escribinos</h3>\n        <p class=\"hint\">Los campos con * son obligatorios.</p>\n        <input type=\"hidden\" name=\"_template\" value=\"table\"><input type=\"hidden\" name=\"_captcha\" value=\"false\"><input type=\"hidden\" name=\"Idioma\" value=\"Español\">\n        <div class=\"hp\" aria-hidden=\"true\"><label>No completar <input type=\"text\" name=\"_honey\" tabindex=\"-1\" autocomplete=\"off\"></label></div>\n        <div class=\"fields\">\n          <div class=\"field\"><label for=\"f-nombre\">Nombre y apellido *</label><input maxlength=\"254\" id=\"f-nombre\" name=\"Nombre\" type=\"text\" autocomplete=\"name\" data-required=\"\" required aria-describedby=\"e-nombre\"><span class=\"err\" id=\"e-nombre\">Completá este campo.</span></div>\n          <div class=\"field\"><label for=\"f-email\">Correo electrónico *</label><input maxlength=\"254\" id=\"f-email\" name=\"Email\" type=\"email\" autocomplete=\"email\" inputmode=\"email\" data-required=\"\" required aria-describedby=\"e-email\"><span class=\"err\" id=\"e-email\">Revisá el correo: falta algo o tiene un error.</span></div>\n          <div class=\"field\"><label for=\"f-org\">Organización <span class=\"opt\">(opcional)</span></label><input maxlength=\"254\" id=\"f-org\" name=\"Organizacion\" type=\"text\" autocomplete=\"organization\"></div>\n          <div class=\"field\"><label for=\"f-tel\">Teléfono <span class=\"opt\">(opcional)</span></label><input maxlength=\"254\" id=\"f-tel\" name=\"Telefono\" type=\"tel\" autocomplete=\"tel\" inputmode=\"tel\"></div>\n          <div class=\"field full\"><label for=\"f-interes\">¿Sobre qué querés conversar? <span class=\"opt\">(opcional)</span></label><select id=\"f-interes\" name=\"interes\"><option value=\"\">Elegí una opción</option><optgroup label=\"Sectores\"><option value=\"productivo\">Productivo y Corporativo</option><option value=\"urbano\">Desarrollo Urbano e Inmobiliario</option><option value=\"infraestructura\">Infraestructura y Transporte</option></optgroup><optgroup label=\"Especialidades\"><option value=\"estrategia\">Estrategia</option><option value=\"organizacion\">Cultura, Liderazgo y Organización</option><option value=\"proyectos\">Diseño y Gestión de Proyectos</option><option value=\"estructuracion\">Estructuración Jurídica y Financiera</option></optgroup><option value=\"otro\">Otro tema / todavía no lo sé</option></select></div>\n          <div class=\"field full\"><label for=\"f-msg\">Mensaje *</label><textarea maxlength=\"5000\" id=\"f-msg\" name=\"Mensaje\" rows=\"4\" placeholder=\"Contanos brevemente el proyecto, la etapa en que está y qué necesitás.\" data-required=\"\" required aria-describedby=\"e-msg\"></textarea><span class=\"err\" id=\"e-msg\">Completá este campo.</span></div>\n        </div>\n        <div class=\"form-foot\">\n          <p class=\"privacy\">Usamos estos datos solo para responder tu consulta.</p>\n          <button class=\"btn btn-primary\" type=\"submit\"><span>Enviar consulta</span> <span aria-hidden=\"true\">→</span></button>\n        </div>\n        <div class=\"form-status\" id=\"formStatus\" role=\"status\" aria-live=\"polite\"></div>\n      </form>"
+  }
+}

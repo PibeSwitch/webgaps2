@@ -1,0 +1,39 @@
+{
+  "name": "gaps-web-astro",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1",
+    "check": "astro check",
+    "verify": "node scripts/verify.mjs",
+    "verify:migration": "node scripts/verify.mjs --original",
+    "build:cloudflare": "node scripts/build-cloudflare.mjs",
+    "deploy:check": "node scripts/check-deploy.mjs",
+    "deploy:cloudflare": "node scripts/deploy-cloudflare.mjs"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "13.7.0",
+    "@astrojs/react": "^5.0.7",
+    "@keystatic/astro": "^6.0.0",
+    "@keystatic/core": "^0.6.9",
+    "astro": "^6.0.0",
+    "@tailwindcss/vite": "^4.2.0",
+    "tailwindcss": "^4.2.0",
+    "@fontsource/ibm-plex-sans": "^5.2.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "vite": "^7.3.8",
+    "wrangler": "^4.160.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@astrojs/check": "^0.9.4",
+    "typescript": "^5.9.0",
+    "linkedom": "^0.18.12"
+  }
+}

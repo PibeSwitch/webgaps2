@@ -1,0 +1,12 @@
+---
+import settings from '../data/settings.json';
+const { lang = 'es' } = Astro.props;
+const message = (lang === 'es' ? settings.whatsappMessageEs : settings.whatsappMessageEn) || '';
+const whatsapp = `https://wa.me/${settings.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`;
+const linkedin = /^https?:\/\//.test(settings.linkedin) ? settings.linkedin : 'https://www.linkedin.com/company/gaps-consultores';
+---
+<ul class="channels">
+  <li><a href={`mailto:${settings.email}`}><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="7" width="24" height="18" rx="1"/><path d="M4 9l12 9 12-9"/></svg><span><small>{lang === 'es' ? 'Correo' : 'Email'}</small><span class="v">{settings.email}</span></span></a></li>
+  <li><a href={whatsapp} target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26l1.6-5A11 11 0 1 1 11 24.5z"/><path d="M12 12c0 4 4 8 8 8l1.5-2-3-1.5-1 1c-1.5-.5-3-2-3.5-3.5l1-1L13.5 10z"/></svg><span><small>WhatsApp</small><span class="v">{settings.phone}</span></span></a></li>
+  <li><a href={linkedin} target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="2"/><path d="M10 14v9M10 9.5v.5M15 23v-9M15 18c0-3 6-4 6 0v5"/></svg><span><small>LinkedIn</small><span class="v">{settings.linkedinName}</span></span></a></li>
+</ul>

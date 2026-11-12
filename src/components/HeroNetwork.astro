@@ -1,0 +1,19 @@
+---
+import Diagram from './Diagram.astro';
+import { href, type Language, content } from '../lib/content';
+const { lang = 'es' } = Astro.props as { lang: Language };
+const d = content[lang];
+---
+{d.hero.image ? <figure class="hero-editorial-image"><img src={d.hero.image} alt={d.hero.imageAlt} width="900" height="690" fetchpriority="high" /></figure> :
+<div class="hero-network" data-network>
+  <div class="network-grid" aria-hidden="true"></div>
+  <svg class="network-lines" viewBox="0 0 600 460" aria-hidden="true">
+    <path class="draw-line" pathLength="1" d="M202 158C380 152 457 200 423 303S207 432 157 353S45 249 202 158" />
+    <circle cx="202" cy="158" r="7" /><circle cx="423" cy="303" r="7" /><circle cx="157" cy="353" r="7" />
+  </svg>
+  {d.sectors.items.map((item, i) => <a class={`network-scene scene-${i}`} href={`${href(lang, 'sectors')}#${item.id}`} aria-label={item.title}>
+    <Diagram kind={item.id} />
+    <span class="scene-label"><span class="num">0{i + 1}</span> {item.title} <span aria-hidden="true">↗</span></span>
+  </a>)}
+</div>
+}

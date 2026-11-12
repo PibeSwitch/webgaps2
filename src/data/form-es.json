@@ -1,0 +1,69 @@
+{
+  "hint": "Los campos con * son obligatorios.",
+  "privacy": "Usamos estos datos solo para responder tu consulta.",
+  "submit": "Enviar consulta",
+  "topic": "¿Sobre qué querés conversar? (opcional)",
+  "choose": "Elegí una opción",
+  "other": "Infraestructura y Transporte",
+  "sending": "Enviando…",
+  "success": "¡Gracias! Recibimos tu consulta y te vamos a responder a la brevedad.",
+  "failure": "No pudimos enviar el formulario. Escribinos directamente a contacto@gapsconsultores.com.ar o por WhatsApp.",
+  "subject": "Nueva consulta desde el sitio web",
+  "fields": [
+    {
+      "id": "f-nombre",
+      "name": "Nombre",
+      "type": "text",
+      "label": "Nombre y apellido *",
+      "placeholder": "",
+      "required": true,
+      "autocomplete": "name",
+      "error": "Completá este campo.",
+      "errorId": "e-nombre"
+    },
+    {
+      "id": "f-email",
+      "name": "Email",
+      "type": "email",
+      "label": "Correo electrónico *",
+      "placeholder": "",
+      "required": true,
+      "autocomplete": "email",
+      "error": "Revisá el correo: falta algo o tiene un error.",
+      "errorId": "e-email"
+    },
+    {
+      "id": "f-org",
+      "name": "Organizacion",
+      "type": "text",
+      "label": "Organización (opcional)",
+      "placeholder": "",
+      "required": false,
+      "autocomplete": "organization",
+      "error": "",
+      "errorId": ""
+    },
+    {
+      "id": "f-tel",
+      "name": "Telefono",
+      "type": "tel",
+      "label": "Teléfono (opcional)",
+      "placeholder": "",
+      "required": false,
+      "autocomplete": "tel",
+      "error": "",
+      "errorId": ""
+    },
+    {
+      "id": "f-msg",
+      "name": "Mensaje",
+      "type": "textarea",
+      "label": "Mensaje *",
+      "placeholder": "Contanos brevemente el proyecto, la etapa en que está y qué necesitás.",
+      "required": true,
+      "autocomplete": "",
+      "error": "Completá este campo.",
+      "errorId": "e-msg"
+    }
+  ]
+}

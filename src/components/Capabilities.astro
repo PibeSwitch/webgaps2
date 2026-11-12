@@ -1,0 +1,10 @@
+---
+const { items, label } = Astro.props as { items: string[], label: string };
+---
+<div class="capabilities-network" data-capabilities aria-label={label}>
+  <svg viewBox="0 0 800 360" preserveAspectRatio="none" aria-hidden="true" class="cap-connections">
+    {items.map((_, i) => <path data-connection={i} style={`--connection:${i}`} pathLength="1" d={i < 4 ? `M400 180C240 180 280 ${40 + i * 90} 170 ${40 + i * 90}` : `M400 180C560 180 520 ${65 + (i - 4) * 115} 630 ${65 + (i - 4) * 115}`} />)}
+  </svg>
+  <div class="cap-core"><img src="/assets/gaps-logo.png" width="430" height="145" alt="GAPS" loading="lazy" /></div>
+  <ul class="cap-nodes">{items.map((item, i) => <li style={`--node:${i}`}><button type="button" data-node={i} aria-pressed="false"><span class="node-dot" aria-hidden="true"></span>{item}</button></li>)}</ul>
+</div>

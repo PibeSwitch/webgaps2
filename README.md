@@ -48,4 +48,3 @@ La preparación para `PibeSwitch/webgaps2` y Cloudflare Workers está documentad
 Se conserva la integración FormSubmit del ZIP y su dirección de destino. No se enviaron correos de prueba. La entrega real y la activación de FormSubmit requieren una prueba autorizada. R2, Resend y el acceso remoto mediante GitHub pertenecen a las fases posteriores. Cambiar el correo desde el panel puede requerir activar el nuevo destinatario en FormSubmit.
 
 El dominio preparado en metadatos corresponde a una futura revisión privada en Sites; la web todavía no se publicó. Al pasar al dominio definitivo actualizar el origen en `src/layouts/Layout.astro`. Los redirects en `public/_redirects` preservan rutas HTML anteriores. Las fotografías originales se conservan como archivos, aunque la interfaz usa dibujos técnicos. No se usaron fuentes ni código propietarios de las referencias Pravah y Decide.
-
