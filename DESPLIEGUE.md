@@ -15,14 +15,14 @@ La publicación en Cloudflare usa Keystatic Cloud. No hace falta GitHub App ni s
 | Variable | Valor por defecto |
 | --- | --- |
 | `PUBLIC_KEYSTATIC_CLOUD_PROJECT` | `sitio/webgaps2` |
-| `PUBLIC_SITE_URL` | `https://gaps-web.francisco-4a8.workers.dev` |
+| `PUBLIC_SITE_URL` | `https://webgaps2.francisco-4a8.workers.dev` |
 
 Una variable de compilación con el mismo nombre en Cloudflare los reemplaza, por ejemplo al conectar el dominio definitivo.
 
 En keystatic.cloud:
 
 1. Dentro del equipo `sitio`, crear el proyecto **`webgaps2`** y conectarlo al repositorio `PibeSwitch/webgaps2`.
-2. En **Project URLs**, cargar `https://gaps-web.francisco-4a8.workers.dev` y, cuando exista, el dominio definitivo.
+2. En **Project URLs**, cargar `https://webgaps2.francisco-4a8.workers.dev` y, cuando exista, el dominio definitivo.
 3. Invitar a los editores desde *Members*. No necesitan cuenta de GitHub. El plan gratuito permite hasta 3.
 
 Al guardar en `/keystatic`, Keystatic hace un commit en `main` y Cloudflare vuelve a publicar.
@@ -30,7 +30,7 @@ Al guardar en `/keystatic`, Keystatic hace un commit en `main` y Cloudflare vuel
 ## 2. Cloudflare Workers con compilación desde GitHub
 
 1. Workers & Pages → Create → Import a repository → `PibeSwitch/webgaps2`, rama `main`, raíz del repositorio.
-2. **Project name:** `gaps-web`. Tiene que coincidir con `wrangler.jsonc`.
+2. **Project name:** `webgaps2`. Tiene que coincidir con `wrangler.jsonc`.
 3. **Build command:** `pnpm build:cloudflare`. **Deploy command:** `pnpm deploy:cloudflare`. Node sale de `.node-version` y pnpm de `packageManager`.
 4. Guardar y ejecutar el primer despliegue. Los commits nuevos de `main` disparan compilación y publicación.
 

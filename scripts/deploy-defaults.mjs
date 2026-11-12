@@ -2,8 +2,8 @@
 export const deployDefaults = {
   // Panel de contenidos en Keystatic Cloud (equipo/proyecto en keystatic.cloud). No requiere claves en el Worker.
   PUBLIC_KEYSTATIC_CLOUD_PROJECT: 'sitio/webgaps2',
-  // Origen del Worker "gaps-web". Cambiarlo cuando se conecte el dominio definitivo.
-  PUBLIC_SITE_URL: 'https://gaps-web.francisco-4a8.workers.dev',
+  // Origen del Worker "webgaps2". Cambiarlo cuando se conecte el dominio definitivo.
+  PUBLIC_SITE_URL: 'https://webgaps2.francisco-4a8.workers.dev',
 };
 
 /** Variables de entorno con los valores por defecto aplicados (las definidas en el entorno ganan). */
